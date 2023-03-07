@@ -16,12 +16,21 @@
   "engines": {
     "node": "^16.19.0 || >=18.0.0"
   },
-  "devDependencies": {
+  "dependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^3.7.1",
+    "eslint": "^8.35.0",
+    "eslint-config-next": "^13.2.3",
     "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
     "prettier": "^2.8.4"
   },
   "peerDependencies": {
-    "eslint": "^7.0.0 || ^8.0.0"
+    "eslint": "^7.0.0 || ^8.0.0",
+    "typescript": ">=4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
   }
 }
