@@ -2,6 +2,7 @@
   "name": "@Shimpei-GAGAN/eslint-config-next-typescript",
   "version": "0.1.0",
   "description": "ESLint rules for Next.js + TypeScript for myself",
+  "private": true,
   "main": "lib/index.js",
   "directories": {
     "lib": "lib"
@@ -11,5 +12,16 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Shimpei-GANGAN/eslint-config-next-typescript"
+  },
+  "engines": {
+    "node": "^16.19.0 || >=18.0.0"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^3.7.1",
+    "eslint-config-prettier": "^8.7.0",
+    "prettier": "^2.8.4"
+  },
+  "peerDependencies": {
+    "eslint": "^7.0.0 || ^8.0.0"
   }
 }
