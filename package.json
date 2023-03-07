@@ -1,0 +1,15 @@
+{
+  "name": "@Shimpei-GAGAN/eslint-config-next-typescript",
+  "version": "0.1.0",
+  "description": "ESLint rules for Next.js + TypeScript for myself",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "Shimpei Iwamaru (https://github.com/Shimpei-GANGAN)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shimpei-GANGAN/eslint-config-next-typescript"
+  }
+}
