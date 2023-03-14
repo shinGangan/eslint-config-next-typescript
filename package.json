@@ -1,0 +1,39 @@
+{
+  "name": "@Shimpei-GAGAN/eslint-config-next-typescript",
+  "version": "0.1.0",
+  "description": "ESLint rules for Next.js + TypeScript for myself",
+  "private": true,
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "Shimpei Iwamaru (https://github.com/Shimpei-GANGAN)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shimpei-GANGAN/eslint-config-next-typescript"
+  },
+  "engines": {
+    "node": "^16.19.0 || >=18.0.0"
+  },
+  "dependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^3.7.1",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "eslint-config-next": "^13.2.3",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "prettier": "^2.8.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.35.0"
+  },
+  "peerDependencies": {
+    "eslint": "^7.0.0 || ^8.0.0",
+    "typescript": ">=4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  }
+}
