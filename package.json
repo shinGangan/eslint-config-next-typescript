@@ -20,6 +20,9 @@
   "engines": {
     "node": "^16.19.0 || >=18.0.0"
   },
+  "scripts": {
+    "docs:prev": "npx docsify-cli@4.4.4 serve docs"
+  },
   "dependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^3.7.1",
     "@typescript-eslint/eslint-plugin": "^5.54.1",
