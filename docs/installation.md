@@ -13,13 +13,7 @@ npm i -D @Shimpei-GAGAN/eslint-config-next-typescript
 ### Common
 
 ```shell
-npm i -D eslint
-```
-
-### TypeScript
-
-```shell
-npm i -D @typescript-eslint/eslint-plugin \
+npm i -D eslint \
          eslint-plugin-unused-imports
 ```
 
@@ -30,7 +24,6 @@ npm i -D @typescript-eslint/eslint-plugin \
 {
   extends: [
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
   ],
   plugins: ["unused-imports"],
   rules: {
@@ -46,6 +39,37 @@ npm i -D @typescript-eslint/eslint-plugin \
       },
     ],
   },
+}
+
+```
+
+### TypeScript
+
+```shell
+npm i -D @typescript-eslint/eslint-plugin
+```
+
+.eslintrc / .eslintrc.js に以下を追加する.
+
+```javascript
+// .eslintrc.js
+{
+  extends: [
+    ...,
+    "plugin:@typescript-eslint/recommended",
+    ...,
+  ],
+  rules: {
+    "@typescript-eslint/explicit-function-return-type": "off",
+  },
+  overrides: [
+    {
+      files: ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      rules: {
+        "@typescript-eslint/explicit-function-return-type": "error",
+      },
+    },
+  ],
 }
 ```
 
